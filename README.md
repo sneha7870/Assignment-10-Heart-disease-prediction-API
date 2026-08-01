@@ -1,5 +1,13 @@
 # Heart Disease Risk Prediction — End-to-End ML Deployment
 
+Name: Sneha Bharty
+
+Registration no: 23MIP10033
+
+Application No:IN26011604
+
+
+
 ## Objective
 Build a machine learning model that predicts whether a patient is at risk of heart disease
 based on clinical parameters, expose it as a REST API using Flask, and deploy it as a live
@@ -92,7 +100,7 @@ python app.py               # starts the Flask API on http://localhost:5000
 4. Deploy. Render will assign a public URL like `https://<your-service-name>.onrender.com`.
 5. Test it: `POST https://<your-service-name>.onrender.com/predict` with the JSON body above.
 
-**Deployed Application URL:** (https://assignment-10-heart-disease-prediction-flas.onrender.com)
+**Deployed Application URL:** https://assignment-10-heart-disease-prediction-cf72.onrender.com
 
 ## Conclusion
 The Random Forest model reached 82% test accuracy in predicting heart disease risk from 13
