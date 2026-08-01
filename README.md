@@ -1,4 +1,8 @@
 # Heart Disease Risk Prediction — End-to-End ML Deployment
+Author :- Sneha Bharty 
+Registration No:-23MIP10033
+Application No:-
+Mail ID:- sneha.23mip10033@vitbhopal.ac.in
 
 ## Objective
 Build a machine learning model that predicts whether a patient is at risk of heart disease
@@ -53,46 +57,9 @@ the assignment's repository structure requirements.
 | No Disease | 0.95 | 0.64 | 0.77 |
 | Heart Disease | 0.76 | 0.97 | 0.85 |
 
-## API Usage
 
-**POST** `/predict`
 
-Request body (all 13 fields required):
-```json
-{
-  "age": 63, "sex": 1, "cp": 3, "trestbps": 145, "chol": 233,
-  "fbs": 1, "restecg": 0, "thalach": 150, "exang": 0,
-  "oldpeak": 2.3, "slope": 0, "ca": 0, "thal": 1
-}
-```
-
-Response:
-```json
-{
-  "prediction": "Heart Disease Detected",
-  "probability": 0.655
-}
-```
-
-**GET** `/health` → `{"status": "ok"}`
-
-## Running Locally
-```bash
-pip install -r requirements.txt
-python train_model.py      # trains the model and writes model.pkl
-python app.py               # starts the Flask API on http://localhost:5000
-```
-
-## Deploying on Render
-1. Push this repository to GitHub (public).
-2. On [Render](https://render.com), create a **New Web Service** and connect the GitHub repo.
-3. Set:
-   - **Build Command:** `pip install -r requirements.txt`
-   - **Start Command:** `gunicorn app:app`
-4. Deploy. Render will assign a public URL like `https://<your-service-name>.onrender.com`.
-5. Test it: `POST https://<your-service-name>.onrender.com/predict` with the JSON body above.
-
-**Deployed Application URL:** _add your live Render URL here after deployment_
+**Deployed Application URL:**  https://assignment-10-heart-disease-prediction-flas.onrender.com
 
 ## Conclusion
 The Random Forest model reached 82% test accuracy in predicting heart disease risk from 13
