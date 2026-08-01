@@ -92,7 +92,7 @@ python app.py               # starts the Flask API on http://localhost:5000
 4. Deploy. Render will assign a public URL like `https://<your-service-name>.onrender.com`.
 5. Test it: `POST https://<your-service-name>.onrender.com/predict` with the JSON body above.
 
-**Deployed Application URL:** [_add your live Render URL here after deployment_](https://assignment-10-heart-disease-prediction-flas.onrender.com)
+**Deployed Application URL:** (https://assignment-10-heart-disease-prediction-flas.onrender.com)
 
 ## Conclusion
 The Random Forest model reached 82% test accuracy in predicting heart disease risk from 13
