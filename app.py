@@ -21,10 +21,9 @@ FEATURE_COLUMNS = [
     "thalach", "exang", "oldpeak", "slope", "ca", "thal",
 ]
 
-
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return "Heart Disease Prediction API is running. POST patient data to /predict"
 
 
 @app.route("/health")
